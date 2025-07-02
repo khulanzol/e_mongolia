@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>eMongolia - Миний бичиг баримтууд</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #0a2f50, #13263f);
+    color: white;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #05273d;
+  }
+  header img.logo {
+    height: 30px;
+    margin-right: 10px;
+  }
+  header h1 {
+    font-weight: normal;
+    font-size: 18px;
+  }
+  .notification {
+    margin-left: auto;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .menu-icon {
+    font-size: 25px;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  .section-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 15px 0 10px 0;
+  }
+
+  .id-card {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    color: black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    max-width: 400px;
+    margin: 0 auto 20px auto;
+  }
+
+  .id-card img.photo {
+    width: 120px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 15px;
+  }
+
+  .id-card .info {
+    font-size: 12px;
+  }
+
+  .id-card .info div {
+    margin-bottom: 6px;
+  }
+
+  .id-card .info b {
+    display: inline-block;
+    width: 100px;
+  }
+
+  .id-card .flag {
+    height: 25px;
+    vertical-align: middle;
+  }
+
+  .id-card .barcode {
+    width: 100px;
+    float: right;
+    margin-top: 10px;
+  }
+
+  .buttons {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .buttons button {
+    width: 100%;
+    background: #0f4c81;
+    border: none;
+    color: white;
+    padding: 12px 15px;
+    font-size: 14px;
+    border-radius: 25px;
+    margin: 8px 0;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  .buttons button .icon {
+    margin-right: 12px;
+    font-size: 18px;
+  }
+
+  .buttons button:hover {
+    background: #0d3b63;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    background: #05273d;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  footer button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  footer button .icon {
+    font-size: 22px;
+    margin-bottom: 3px;
+  }
+
+</style>
+</head>
+<body>
+
+<header>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/E-Mongolia_Logo.svg/1200px-E-Mongolia_Logo.svg.png" alt="eMongolia logo" class="logo" />
+  <h1>эмongolia</h1>
+  <div class="notification" title="Notifications">&#128276;</div>
+  <div class="menu-icon">&#9776;</div>
+</header>
+
+<main>
+  <div class="section-title">Миний бичиг баримтууд</div>
+
+  <div class="id-card">
+    <img src="/mnt/data/dd54e190-5c70-46a8-a9e5-8326ccbff99d.png" alt="Citizen ID" class="photo" />
+    <div class="info">
+      <div><b>Монгол улсын иргэний үнэмлэх</b></div>
+      <div><b>Овог Family name:</b> Боргил</div>
+      <div><b>Эцэг/эх-ийн нэр Surname:</b> Золбоо</div>
+      <div><b>Нэр Given name:</b> Хулан</div>
+      <div><b>Хүйс Sex:</b> Эмэгтэй</div>
+      <div><b>Төрсөн он, сар өдөр:</b> 2005/06/11</div>
+      <div><b>Регистрийн дугаар:</b> 562016718966</div>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Flag_of_Mongolia.svg/64px-Flag_of_Mongolia.svg.png" alt="Flag" class="flag" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Barcode_icon.svg/128px-Barcode_icon.svg.png" alt="Barcode" class="barcode" />
+  </div>
+
+  <div class="section-title">Төрд байгаа миний мэдээлэл</div>
+  
+  <div class="buttons">
+    <button><span class="icon">👑</span> "Чингис Хаан" Үндэсний баялгийн сан</button>
+    <button><span class="icon">🗂️</span> Нийгмийн даатгалын мэдээлэл</button>
+    <button><span class="icon">💰</span> Миний тэтгэврийн мөнгөн хуримтлал</button>
+    <button><span class="icon">💳</span> Зээлийн мэдээлэл</button>
+    <button><span class="icon">🩺</span> Эрүүл мэндийн даатгал, төлөлтийн</button>
+  </div>
+</main>
+
+<footer>
+  <button><span class="icon">🏠</span>Нүүр</button>
+  <button><span class="icon">📱</span>Үйлчилгээ</button>
+  <button><span class="icon">💬</span>Чат</button>
+  <button><span class="icon">👤</span>Профайл</button>
+</footer>
+
+</body>
+</html>
